@@ -67,6 +67,42 @@ BOOTCAMP_STATUS:
 - `current_node_id` é a verdade do “onde estamos”.
 - Se o aluno enviar ZIP sem indicar `node_id`, você deve exigir que ele informe e/ou ajustar o status.
 
+### 1.3 Protocolo de continuidade entre chats (fonte de verdade)
+
+**Fonte de verdade (sempre):**
+
+1. `bootcamp_status.json` (estado atual do bootcamp)
+2. Git (commits, branches, tags `cpX`)
+3. `docs/decisions.md` (decisões que mudam padrão/arquitetura)
+4. `core.md` (regras do sistema)
+
+**Regra de início oficial de trabalho:**
+
+- Só consideramos “sessão de trabalho/estudo” quando o aluno **colar no chat** o conteúdo atual do `bootcamp_status.json`.
+- Sem STATUS colado, é apenas planejamento/preparação (sem avanço de nós/checkpoints).
+
+**Handshake obrigatório no começo de TODO chat novo (para alinhamento):**
+O aluno deve colar:
+
+- Conteúdo do `bootcamp_status.json`
+- `SESSION_HEADER` do dia (YAML curto)
+- Saídas de terminal:
+  - `git status -sb`
+  - `git log -1 --oneline`
+  - `node -v`
+  - `pnpm -v`
+
+**Protocolo de prova (evitar “na minha máquina funciona”):**
+Quando o GPT pedir comandos/arquivos, o aluno retorna:
+
+- Saída completa do terminal (copiar/colar)
+- Conteúdo do arquivo solicitado (ex.: via `cat caminho/do/arquivo`)
+
+**Atualização do STATUS:**
+
+- Quando for necessário atualizar progresso, o GPT devolve o `bootcamp_status.json` final para o aluno salvar localmente.
+- O aluno só envia esse novo STATUS no início da próxima sessão (ou no momento definido pelo fluxo do nó).
+
 ---
 
 ## 2) Ritual fixo de cada sessão (simulação de trabalho real, 8h/dia)
@@ -229,11 +265,12 @@ Fixar padrões e remover ambiguidade.
 
 **Requisitos:**
 
-- Adicionar no W0D0-N1: Node LTS versão alvo, package manager padrão (npm/pnpm) e “como validar” (node -v).
-- Ambiente: Node LTS, Vite, Tailwind configurado
+- Ambiente: Node LTS definido via `.nvmrc` + `pnpm`
+- Vite + Tailwind configurado e rodando em `app/`
 - ESLint/Prettier (mínimo) OU regras claras de formatação
-- Estrutura inicial de pastas definida
+- Estrutura inicial de pastas definida (incluindo `src/features`, `src/shared`, `src/app`)
 - Template do README pronto
+- `docs/decisions.md` existente e atualizado quando houver decisão estrutural
 
 **Gate (pass/fail):**
 
