@@ -1,0 +1,25 @@
+BOOTCAMP_STATUS:
+  version: "v1.0"
+  current_week: 0
+  current_day: 0
+  current_node_id: "W0D0-N1"
+  phase: "kickoff"
+  last_passed_node_id: ""
+  checkpoints:
+    CP1: "not_started"
+    CP2: "not_started"
+    CP3: "not_started"
+    CP4: "not_started"
+    CP5: "not_started"
+  submissions: []
+  penalties:
+    missing_daily_log: 0
+    missing_self_review: 0
+  active_repo_or_zip_name: "bootcamp-react"
+  tools_stack:
+    bundler: "vite"
+    styling: "tailwind"
+    routing: "none"
+    data: "none"
+    testing: "none"
+  remarks: ""
