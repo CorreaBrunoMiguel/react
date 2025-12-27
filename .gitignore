@@ -1,0 +1,41 @@
+# dependencies
+node_modules/
+
+# builds
+dist/
+build/
+
+# Vite
+.vite/
+
+# logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+*.log
+
+# env
+.env
+.env.* 
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# coverage / tests
+coverage/
+
+# cache
+.eslintcache
+.parcel-cache/
+.turbo/
+.pnpm-store/
+
+# misc
+*.tsbuildinfo
