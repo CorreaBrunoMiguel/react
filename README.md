@@ -26,11 +26,11 @@ pnpm lint
 
 ## Estrutura
 
-- `core.md` --- regras do bootcamp
-- `bootcamp_status.json` --- estado atual (fonte de verdade)
-- `docs/decisions.md`--- decisões permanentes
-- `docs/daily/`--- logs diários
-- `app/` --- projeto Vite + React + Tailwind
+- `core.md` — regras do bootcamp
+- `bootcamp_status.json` — estado atual (fonte de verdade)
+- `docs/decisions.md` — decisões permanentes
+- `docs/daily/` — logs diários
+- `app/` — projeto Vite + React + Tailwind
 
 ## Status
 
