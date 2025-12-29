@@ -563,7 +563,6 @@ SESSION_HEADER:
   goal_today: "" # ex: "fechar W2D2-N1"
   constraints: "" # ex: "sem muito tempo para UI", "internet ruim"
 ```
-````
 
 ### 12.2 Regra de bloqueio
 
@@ -708,3 +707,4 @@ AUTO_REVIEW:
 ```
 
 ---
+````
