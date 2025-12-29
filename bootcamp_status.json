@@ -3,9 +3,9 @@
     "version": "v1.0",
     "current_week": 0,
     "current_day": 0,
-    "current_node_id": "W0D0-N2",
-    "phase": "kickoff",
-    "last_passed_node_id": "W0D0-N1",
+    "current_node_id": "W1D1-N1",
+    "phase": "plan",
+    "last_passed_node_id": "W0D0-N2",
     "checkpoints": {
       "CP1": "not_started",
       "CP2": "not_started",
@@ -26,6 +26,6 @@
       "data": "none",
       "testing": "none"
     },
-    "remarks": "W0D0-N1 PASS: repo organizado + Vite React app/ + Tailwind configurado + estrutura src/app|features|shared|styles + build/lint ok + README e daily log."
+    "remarks": "W0D0-N2 PASS: tema definido em docs/W0D0-N2-theme.md (RPG Backlog Xbox 2020+). Próximo: W1D1-N1 (layout base + tokens)."
   }
 }
